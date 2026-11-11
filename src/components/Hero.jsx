@@ -23,15 +23,15 @@ export default function Hero() {
                          <div className="text-sm md:text-lg text-balance md:max-w-4xl">
                               <ul className="flex flex-col gap-2">
                                    <li className="flex gap-2 items-center">
-                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 md:bg-slate-700 rounded-full p-1" />{" "}
+                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 dark:bg-slate-700 rounded-full p-1" />{" "}
                                         Roda 100% no navegador
                                    </li>
                                    <li className="flex gap-2 items-center">
-                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 md:bg-slate-700 rounded-full p-1" />{" "}
+                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 dark:bg-slate-700 rounded-full p-1" />{" "}
                                         Sem cadastro, sem servidor
                                    </li>
                                    <li className="flex gap-2 items-center">
-                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 md:bg-slate-700 rounded-full p-1" />{" "}
+                                        <Check className="size-5 text-pink-500 stroke-4 bg-pink-100 dark:bg-slate-700 rounded-full p-1" />{" "}
                                         Tudo local, nada é enviado
                                    </li>
                               </ul>
