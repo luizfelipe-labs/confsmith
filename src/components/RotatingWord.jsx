@@ -11,7 +11,7 @@ const words = [
      "atalhos",
 ];
 
-export default function RotatingWord() {
+export default function RotatingWord({className = ""}) {
      const [index, setIndex] = useState(0);
 
      useEffect(() => {
@@ -20,9 +20,11 @@ export default function RotatingWord() {
           }, 3000);
 
           return () => clearInterval(id);
-     },[]);
-     
+     }, []);
+
      return (
-          <span>{words[index]}</span>
+          <span className="inline-block overflow-hidden align-bottom" >
+               <span className={`${className} inline-block animate-rise`} key={index}>{words[index]}</span>
+          </span>
      )
 }
