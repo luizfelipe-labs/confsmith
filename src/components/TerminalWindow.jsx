@@ -1,10 +1,11 @@
 import { Circle, Folder } from "lucide-react";
+import TimeStamp from "./TimeStamp";
 
 export default function TerminalWindow({className = " "}) {
      return (
           <>
                <div className={`bg-slate-950 max-w-86 mx-auto rounded-xl overflow-hidden ${className}`}>
-                    <div className="bg-zinc-700 w-full flex border-b items-center ">
+                    <div className="bg-zinc-700 w-full flex items-center ">
                          <div className="gap-2 flex p-2">
                               <Circle className="fill-red-400 size-3 stroke-0" />
                               <Circle className="fill-amber-400 size-3 stroke-0" />
@@ -21,7 +22,7 @@ export default function TerminalWindow({className = " "}) {
                          </div>
                     </div>
                     <div className="text-slate-50 flex flex-col text-10 text-[0.6875rem] font-mono p-2">
-                         <span>Last login:</span>
+                         <span>Last login: <TimeStamp /> on console</span>
                          <span>guest@Mac /etc/portage % cat make.conf</span>
                          
                     </div>
