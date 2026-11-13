@@ -14,7 +14,6 @@
 
 @theme {
      --animate-rise: rise ease-in forwards 3s;
-
      @keyframes rise {
           from {
                opacity: 0;
