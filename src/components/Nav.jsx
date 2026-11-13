@@ -1,13 +1,14 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import LogoSwitcher from "./LogoSwitcher";
+import LogoSwitcher from "./Logo";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Nav() {
      return (
           <nav className="sticky flex p-5 justify-between border-b border-violet-500/20 items-center md:text-2xl md:px-10 md:my-2">
                <div className="flex gap-15 text-base">
-                    <LogoSwitcher className="md:w-40" />
+                    <Logo className="md:w-40 h-auto"/>
                     <div className="gap-5 hidden md:flex font-medium">
                          <Link
                               href="/"
@@ -35,12 +36,12 @@ export default function Nav() {
                <div className="flex gap-2  md:gap-7">
                     <Link
                          href="/"
-                         className="flex bg-zinc-900 group items-center text-violet-50 px-2 rounded-lg hover:bg-zinc-600 transition-colors duration-300 border border-violet-500 dark:bg-violet-600 md:px-3 md:py-1"
+                         className="flex bg-zinc-900 group items-center text-violet-50 px-2 rounded-lg hover:bg-zinc-400 transition-colors duration-300 border border-secondary dark:bg-slate-200 dark:text-background md:px-3 md:py-1"
                     >
                          <span className="font-semibold text-sm md:text-2xl">
                               Editor
                          </span>
-                         <ChevronRight className="size-4 stroke-4 transition-transform group-hover:translate-x-2 duration-500" />
+                         <ChevronRight className="size-4 stroke-4 transition-translate group-hover:translate-x-2 duration-300" />
                     </Link>
                     <a
                          href="https://github.com/luizfelipe-labs/confsmith"

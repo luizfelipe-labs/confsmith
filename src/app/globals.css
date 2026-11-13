@@ -6,6 +6,8 @@
 }
 
 @theme inline {
+     --color-primary: var(--color-rose-500);
+     --color-secondary: var(--color-pink-500);
      --color-background: var(--background);
      --color-foreground: var(--foreground);
      --font-sans: var(--font-mona-sans), sans-serif;
@@ -38,6 +40,12 @@
           100% {
                opacity: 0;
                transform: translateY(-100%);
+          }
+     }
+     --animate-blink: blink step-end 1s infinite;
+     @keyframes blink {
+          50% {
+               opacity: 0;
           }
      }
 }
